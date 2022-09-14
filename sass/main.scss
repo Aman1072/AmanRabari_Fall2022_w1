@@ -1,0 +1,10 @@
+body {
+    font-size: 16px;
+    background-color: rgb(236, 103, 103);
+}
+
+@import "./modules/main.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+
+
