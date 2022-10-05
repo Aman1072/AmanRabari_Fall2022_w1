@@ -1,9 +1,9 @@
-function getData(callback) {
+function getData(targeturl, callback) {
     console.log('fired from the data mine module');
 
     //fetch is a JS API that runs AJAX requests
     //and gets data from a resource
-    fetch(`./data.json`) // pass in the path to the data source
+    fetch(targeturl) // pass in the path to the data source
         .then(res => res.json()) // convert JSON to plain JS object 
         // the res is the data that we are retrieving from the resource
         .then(data => { // data is converted JSON object -> now it is just data (JS object)
